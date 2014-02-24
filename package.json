@@ -1,0 +1,36 @@
+{
+  "name": "broccoli-livescript",
+  "version": "0.0.0",
+  "description": "LiveScript compiler for Broccoli",
+  "main": "index.js",
+  "scripts": {
+    "test": "broccoli build test/actual && node node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/broccoli-livescript.git"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shinnn/broccoli-livescript/issues"
+  },
+  "homepage": "https://github.com/shinnn/broccoli-livescript",
+  "keywords": [
+    "broccoli-plugin",
+    "livescript",
+    "compiler"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.0",
+    "LiveScript": "^1.2.0"
+  },
+  "devDependencies": {
+    "broccoli": "^0.2.0",
+    "mocha": "^1.17.1"
+  }
+}
