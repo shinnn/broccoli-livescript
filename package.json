@@ -25,6 +25,7 @@
     "broccoli-plugin",
     "livescript",
     "compiler",
+    "transpiler",
     "syntactic sugar",
     "altjs"
   ],
