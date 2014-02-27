@@ -6,8 +6,9 @@ var fs = require('fs');
 var expected = "['ha', 'ha', 'ha'];";
 
 describe('broccoli-livescript', function () {
-  it('should run LiveScript compiler', function (done) {
-    fs.readFile('test/actual/src.js', function(err, data) {
+  it('should compile LiveScript to JavaScript', function (done) {
+    fs.readFile('test/actual/simple.js', function(err, data) {
+      if (err) done(err);
       assert.strictEqual(data.toString(), expected);
       done();
     });

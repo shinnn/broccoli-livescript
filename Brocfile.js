@@ -1,5 +1,9 @@
 'use strict';
 
+var filterLiveScript = require('./index');
+
 module.exports = function (broccoli) {
-  return require('./index')(broccoli.makeTree('test/fixture'), {bare: true});
+  return filterLiveScript(broccoli.makeTree('test/fixture'), {
+    bare: true
+  });
 };
