@@ -24,7 +24,7 @@ tree = filterLiveScript(tree, options);
 
 ### filterLiveScript(tree, options)
 
-##### options.bare
+#### options.bare
 
 Type: `Boolean` Default: `false`
 
