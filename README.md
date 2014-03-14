@@ -12,6 +12,7 @@
 ```
 npm i --save broccoli-livescript
 ```
+Make sure you have installed [Node](http://nodejs.org/) before running this command.
 
 ## Example
 
