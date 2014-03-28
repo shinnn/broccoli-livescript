@@ -24,6 +24,7 @@
   "keywords": [
     "broccoli-plugin",
     "livescript",
+    "language",
     "compiler",
     "transpiler",
     "syntactic sugar",
@@ -34,8 +35,8 @@
     "LiveScript": "^1.2.0"
   },
   "devDependencies": {
-    "broccoli": "^0.4.1",
-    "mocha": "^1.18.0",
+    "broccoli": "^0.4.3",
+    "mocha": "^1.18.2",
     "rimraf": "^2.2.6"
   }
 }
