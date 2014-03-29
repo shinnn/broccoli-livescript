@@ -3,7 +3,7 @@
 var filterLiveScript = require('./index');
 
 module.exports = function(broccoli) {
-  return filterLiveScript(broccoli.makeTree('test/fixture'), {
+  return filterLiveScript('test/fixture', {
     bare: true
   });
 };
