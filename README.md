@@ -1,18 +1,19 @@
 # broccoli-livescript
 
-[![NPM version](https://badge.fury.io/js/broccoli-livescript.png)](http://badge.fury.io/js/broccoli-livescript)
-[![Build Status](https://travis-ci.org/shinnn/broccoli-livescript.png?branch=master)](https://travis-ci.org/shinnn/broccoli-livescript)
-[![Dependency Status](https://david-dm.org/shinnn/broccoli-livescript.png)](https://david-dm.org/shinnn/broccoli-livescript)
-[![devDependency Status](https://david-dm.org/shinnn/broccoli-livescript/dev-status.png)](https://david-dm.org/shinnn/broccoli-livescript#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/broccoli-livescript.svg)](http://badge.fury.io/js/broccoli-livescript)
+[![Build Status](https://travis-ci.org/shinnn/broccoli-livescript.svg?branch=master)](https://travis-ci.org/shinnn/broccoli-livescript)
+[![Dependency Status](https://david-dm.org/shinnn/broccoli-livescript.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-livescript)
+[![devDependency Status](https://david-dm.org/shinnn/broccoli-livescript/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-livescript#info=devDependencies)
 
 [LiveScript](http://livescript.net/) compiler for [Broccoli](https://github.com/joliss/broccoli)
 
 ## Installation
 
+Install with [npm](broccoli). (Make sure you have installed [Node](http://nodejs.org/).)
+
 ```
-npm i --save broccoli-livescript
+npm i --save-dev broccoli-livescript
 ```
-Make sure you have installed [Node](http://nodejs.org/) before running this command.
 
 ## Example
 
