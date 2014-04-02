@@ -31,11 +31,11 @@
     "altjs"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.4",
+    "broccoli-filter": "^0.1.5",
     "LiveScript": "^1.2.0"
   },
   "devDependencies": {
-    "broccoli": "^0.5.0",
+    "broccoli": "^0.6.0",
     "mocha": "^1.18.2",
     "rimraf": "^2.2.6"
   }
