@@ -1,9 +1,3 @@
 'use strict';
 
-var filterLiveScript = require('./index');
-
-module.exports = function(broccoli) {
-  return filterLiveScript('test/fixture', {
-    bare: true
-  });
-};
+module.exports = require('./index')('test/fixture', {bare: true});
