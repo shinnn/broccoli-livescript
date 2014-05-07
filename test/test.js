@@ -3,7 +3,7 @@
 var assert = require('assert');
 var fs = require('fs');
 
-var expected = "['ha', 'ha', 'ha'];";
+var expected = "['ha', 'ha', 'ha'];"; // jshint ignore: line
 
 describe('broccoli-livescript', function() {
   it('should compile LiveScript to JavaScript', function(done) {
