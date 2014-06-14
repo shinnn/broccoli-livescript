@@ -7,7 +7,7 @@ function LiveScriptFilter(inputTree, options) {
   if (!(this instanceof LiveScriptFilter)) {
     return new LiveScriptFilter(inputTree, options);
   }
-  
+
   this.inputTree = inputTree;
   this.options = options || {};
 }
