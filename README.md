@@ -5,11 +5,11 @@
 [![Dependency Status](https://david-dm.org/shinnn/broccoli-livescript.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-livescript)
 [![devDependency Status](https://david-dm.org/shinnn/broccoli-livescript/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-livescript#info=devDependencies)
 
-[LiveScript](http://livescript.net/) compiler for [Broccoli](https://github.com/joliss/broccoli)
+[LiveScript](http://livescript.net/) compiler for [Broccoli](https://github.com/broccolijs/broccoli)
 
 ## Installation
 
-Install with [npm](broccoli). (Make sure you have installed [Node](http://nodejs.org/).)
+Install with [npm](https://www.npmjs.org/). (Make sure you have installed [Node](http://nodejs.org/).)
 
 ```
 npm i --save-dev broccoli-livescript
