@@ -2,28 +2,17 @@
   "name": "broccoli-livescript",
   "version": "0.2.0",
   "description": "LiveScript compiler for Broccoli",
-  "main": "index.js",
-  "scripts": {
-    "lint": "jshint *.js test/*.js --reporter node_modules/jshint-stylish/stylish",
-    "build": "rimraf test/actual && broccoli build test/actual",
-    "pretest": "${npm_package_scripts_lint} & npm run-script build",
-    "test": "mocha test/test.js --reporter spec --timeout 300",
-    "posttest": "rimraf tmp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinnn/broccoli-livescript.git"
-  },
+  "repository": "shinnn/broccoli-livescript",
   "author": {
     "name": "Shinnosuke Watanabe",
     "url": "https://github.com/shinnn"
   },
-  "readmeFilename": "README.md",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shinnn/broccoli-livescript/issues"
-  },
-  "homepage": "https://github.com/shinnn/broccoli-livescript",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/broccoli-livescript/blob/master/LICENSE"
+    }
+  ],
   "keywords": [
     "broccoli-plugin",
     "livescript",
@@ -33,15 +22,33 @@
     "syntactic sugar",
     "altjs"
   ],
+  "scripts": {
+    "pretest": "jscs *.js test/test.js && eslint *.js test/test.js",
+    "test": "node test/test.js | tap-spec",
+    "coverage": "istanbul cover --no-default-excludes -x=node_modules/** test/test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
+    "LiveScript": "^1.3.1",
     "broccoli-filter": "^0.1.6",
-    "LiveScript": "^1.2.0"
   },
   "devDependencies": {
-    "broccoli": "^0.12.2",
-    "jshint": "^2.5.2",
-    "jshint-stylish": "^0.4.0",
-    "mocha": "^1.21.1",
-    "rimraf": "^2.2.8"
+    "broccoli": "^0.13.3",
+    "eslint": "^0.14.1",
+    "fs-readfile-promise": "^1.1.0",
+    "istanbul": "^0.3.5",
+    "istanbul-coveralls": "^1.0.1",
+    "jscs": "^1.11.3",
+    "rimraf": "^2.2.8",
+    "tap-spec": "^2.2.1",
+    "tape": "^3.5.0"
+  },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 98,
+    "validateLineBreaks": "LF"
   }
 }
