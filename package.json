@@ -1,6 +1,6 @@
 {
   "name": "broccoli-livescript",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "LiveScript compiler for Broccoli",
   "repository": "shinnn/broccoli-livescript",
   "author": {
