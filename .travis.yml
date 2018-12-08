@@ -2,7 +2,7 @@ language: node_js
 node_js: node
 matrix:
   include:
-  - dist: trusty
+  - dist: xenial
     after_success: npm run-script coveralls
   - os: windows
     node test\\test.js
