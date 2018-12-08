@@ -1,11 +1,8 @@
-sudo: false
-git:
-  depth: 2
 language: node_js
-node_js:
-  - iojs
-  - node
-after_script:
-  - npm run-script coveralls
-notifications:
-  email: false
+node_js: node
+matrix:
+  include:
+  - dist: trusty
+    after_success: npm run-script coveralls
+  - os: windows
+    node test\\test.js
