@@ -1,8 +1,7 @@
 'use strict';
 
-var Filter = require('broccoli-filter');
-var LiveScript = require('LiveScript');
-var objectAssign = require('object-assign');
+const Filter = require('broccoli-filter');
+const LiveScript = require('LiveScript');
 
 function LiveScriptFilter(inputTree, options) {
   if (!(this instanceof LiveScriptFilter)) {
@@ -21,7 +20,7 @@ LiveScriptFilter.prototype.targetExtension = 'js';
 
 LiveScriptFilter.prototype.processString = function(str) {
   // LiveScript overwrites the option object.
-  return LiveScript.compile(str, objectAssign({}, this.options));
+  return LiveScript.compile(str, Object.assign({}, this.options));
 };
 
 module.exports = LiveScriptFilter;
